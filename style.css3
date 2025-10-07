@@ -1,0 +1,11 @@
+.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* horizontally center children when width allows */
+    align-items: center; /* center children vertically inside .box if it has height */
+}
+
+.box h2 {
+    text-align: center;
+    margin: 0.5em 0;
+}
