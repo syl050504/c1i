@@ -1,6 +1,17 @@
-header {
+img {
+    height: 100%;
+    width: 300px;
+}
+
+.container>h1 {
+    display: flex;
+    justify-content: center;
+}
+
+a {
     display: flex;
     align-self: center;
+    justify-content: center;
 }
 
 section {
