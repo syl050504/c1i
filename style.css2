@@ -1,14 +1,6 @@
 section {
     display: flex;
-}
-
-.row {
-    display: flex;
-    gap: 16px;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
-    align-content: space-around
-}
-
-.row-bottom {
-    margin-top: 16px;
 }
