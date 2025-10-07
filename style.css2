@@ -1,0 +1,14 @@
+section {
+    display: flex;
+}
+
+.row {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    align-content: space-around
+}
+
+.row-bottom {
+    margin-top: 16px;
+}
