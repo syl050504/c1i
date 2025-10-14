@@ -1,17 +1,62 @@
-.container>h1 {
+h1,
+h2,
+a {
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
-.container>a {
+
+body {
+    background-color: #f5f5f5;
     display: flex;
-    align-self: center;
     justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
 
-.header>img {
-    width: 400px;
-    height: 100%;
+/* Flex container for images */
+.gallery {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+    max-width: 900px;
+    padding: 20px;
+}
+
+/* Each image box */
+.image-container {
+    position: relative;
+    display: inline-block;
+    flex: 1 1 200px;
+    /* responsive resizing */
+    max-width: 220px;
+}
+
+/* The images */
+.image-container img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* Hidden textbox */
+.hover-text {
+    position: absolute;
+    bottom: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.75);
+    color: #fff;
+    padding: 8px 12px;
+    font-size: 13px;
+    opacity: 0;
+    white-space: nowrap;
+}
+
+/* Show on hover */
+.image-container:hover .hover-text {
+    opacity: 100;
 }
