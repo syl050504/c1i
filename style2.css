@@ -1,10 +1,14 @@
-h1,
-h2,
-a {
+.heading {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    flex-wrap: wrap;
+    top: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    background: #ffffff;
 }
 
 
@@ -12,11 +16,15 @@ body {
     background-color: #f5f5f5;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     min-height: 100vh;
 }
 
-/* Flex container for images */
+/* Make sure page content doesn't sit under the fixed header. Adjust the value if your header is taller. */
+.container {
+    padding-top: 200px;
+}
+
 .gallery {
     display: flex;
     flex-wrap: wrap;
@@ -26,7 +34,6 @@ body {
     padding: 20px;
 }
 
-/* Each image box */
 .image-container {
     position: relative;
     display: inline-block;
