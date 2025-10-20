@@ -1,0 +1,43 @@
+/* --- SIDEBAR --- */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 80px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 18px;
+    background: #fff;
+    border-right: 1px solid #ddd;
+    z-index: 10;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    margin: 10px 0;
+    transition: opacity 0.2s ease;
+}
+
+.sidebar a:hover {
+    opacity: 0.5;
+}
+
+.content {
+    margin-left: 80px;
+    padding: 60px 100px;
+    flex: 1;
+    max-width: 900px;
+}
+
+.container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
