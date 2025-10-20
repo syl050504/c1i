@@ -1,28 +1,46 @@
-.header>.heading {
+body {
+    margin: 0;
+    background: #fff;
+    color: #000;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    flex-wrap: wrap;
+}
+
+/* --- SIDEBAR --- */
+.sidebar {
+    position: fixed;
     top: 0;
     left: 0;
-    right: 0;
-    text-align: center;
-    background: #ffffff;
+    width: 80px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 18px;
+    background: #fff;
+    border-right: 1px solid #ddd;
+    z-index: 10;
 }
 
+.sidebar a {
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+    transition: opacity 0.2s ease;
+}
 
-body {
-    background-color: #ffffff;
+.sidebar a:hover {
+    opacity: 0.5;
+}
+
+/* --- MAIN CONTENT --- */
+.container {
+    margin-left: 80px;
+    padding-top: 200px;
+    width: calc(100% - 80px);
     display: flex;
     justify-content: center;
-    align-items: flex-start;
-    min-height: 100vh;
-}
-
-/* Make sure page content doesn't sit under the fixed header. Adjust the value if your header is taller. */
-.container {
-    padding-top: 200px;
 }
 
 .gallery {
