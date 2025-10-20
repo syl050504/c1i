@@ -29,30 +29,8 @@
     opacity: 0.5;
 }
 
-
 /* actual content   */
-.content {
+.container {
     margin-left: 80px;
-    padding: 60px 100px;
-    flex: 1;
-    max-width: 900px;
-}
-
-.container img {
-    width: 100%;
-    height: auto;
-    /* maintain original aspect ratio */
-    display: block;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-    .sidebar {
-        width: 50px;
-    }
-
-    .content {
-        margin-left: 50px;
-        padding: 40px 20px;
-    }
+    padding: 40px;
 }
