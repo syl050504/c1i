@@ -29,9 +29,9 @@
     opacity: 0.5;
 }
 
-.content {
+.container {
     margin-left: 80px;
-    padding: 60px 100px;
+    padding: 100px;
     flex: 1;
     max-width: 900px;
 }
