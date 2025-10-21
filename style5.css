@@ -30,8 +30,8 @@
 }
 
 .container {
-    margin-left: 80px;
-    padding: 100px;
+    margin-left: 100px;
+    padding: 85px;
     flex: 1;
     max-width: 900px;
 }
