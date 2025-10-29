@@ -17,7 +17,7 @@ body {
     justify-content: center;
     align-items: center;
 
-    gap: 18px;
+    gap: 8px;
     background: #fff;
     border-right: 1px solid #ddd;
     z-index: 10;
@@ -40,7 +40,7 @@ body {
 .container {
     margin-left: 80px;
     padding-top: 200px;
-    width: calc(100% - 80px);
+    width: calc(100%);
     display: flex;
     justify-content: center;
 }
@@ -49,16 +49,13 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 24px;
-    max-width: 900px;
-    padding: 20px;
+    gap: 10px;
 }
 
 .image-container {
     position: relative;
-    display: inline-block;
-    flex: 1 1 200px;
-    max-width: 220px;
+    flex: 200px;
+    max-width: 500px;
 }
 
 /* The images */

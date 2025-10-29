@@ -28,16 +28,3 @@
 .sidebar a:hover {
     opacity: 0.5;
 }
-
-.container {
-    margin-left: 100px;
-    padding: 85px;
-    flex: 1;
-    max-width: 900px;
-}
-
-.container img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
