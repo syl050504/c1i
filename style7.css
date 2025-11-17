@@ -11,14 +11,14 @@
     align-items: center;
 
     gap: 8px;
-    background: #fff;
-    border-right: 1px solid #ddd;
+    background: #000000;
+    border-right: 1px solid #000000;
     z-index: 10;
 }
 
 .sidebar a {
     text-decoration: none;
-    color: #000;
+    color: #ffffff;
     font-size: 18px;
     letter-spacing: 0.5px;
     margin: 10px 0;
@@ -27,4 +27,64 @@
 
 .sidebar a:hover {
     opacity: 0.5;
+}
+
+/* Ensure the whole page background is black and text is readable */
+body {
+    background: #000000;
+    color: #ffffff;
+}
+
+
+.container {
+    margin-left: 70px;
+    padding: 85px;
+    flex: 1;
+    max-width: 900px;
+}
+
+.container img {
+    max-width: 3000px;
+    width: 100vw;
+    /* responsive: 70% of viewport width on small screens */
+    height: auto;
+    display: block;
+    margin: 40px auto;
+}
+
+/* Sparkle effect styling */
+.sparkle-effect {
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    pointer-events: none;
+    z-index: 9999;
+    transform: translate(-50%, -50%);
+    animation: sparkle-fade 1.8s linear forwards;
+}
+
+@keyframes sparkle-fade{
+    0% {
+        opacity: 1;
+    }
+
+    80% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+
+    80% {
+        opacity: 1;
+    }
+
+    0% {
+        opacity: 0;
+    }
 }

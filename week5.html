@@ -18,12 +18,33 @@
         <a href="./week5.html">5</a>
         <a href="./week6.html">6</a>
         <a href="./week7.html">7</a>
+        <a href="./week8.html">8</a>
     </nav>
 
-    <div class="container">
-        <img src="IMG/hand.png" alt="hand" />
-        <img src="IMG/hand+frog.png" alt="frog" />
-        <img src="IMG/hand+guineapig.png" alt="guineapig" />
-        <img src="IMG/hand+lion.png" alt="lion" />
-    </div>
+    <text>
+        <h1> Click! </h1>
+    </text>
+
+    <script>
+        // Keep the images in an array and store the current index on the element
+        (function () {
+            var images = [
+                "IMG/hand.png",
+                "IMG/hand+frog.png",
+                "IMG/hand+guineapig.png",
+                "IMG/hand+lion.png"
+            ];
+
+            window.toggleImage = function () {
+                var imgElement = document.getElementById('toggleImage');
+                var idx = parseInt(imgElement.dataset.index || '0', 10);
+                idx = (idx + 1) % images.length;
+                imgElement.src = images[idx];
+                imgElement.dataset.index = idx;
+            };
+        })();
+    </script>
+
+    <img src="IMG/hand.png" id="toggleImage" data-index="0" onclick="toggleImage();" />
+
 </body>

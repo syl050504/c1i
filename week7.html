@@ -18,5 +18,28 @@
         <a href="./week5.html">5</a>
         <a href="./week6.html">6</a>
         <a href="./week7.html">7</a>
+        <a href="./week8.html">8</a>
     </nav>
 
+    <div class="container">
+        <img src="IMG/halloween1.png" alt="rosary">
+        <img src="IMG/halloween2.png" alt="girl lizard">
+        <img src="IMG/cold.png" alt="green onions">
+    </div>
+    <script>
+        // Show sparkle.png at click position for a few seconds
+        document.addEventListener('click', function (e) {
+            // Only show in main content area (not sidebar)
+            if (e.target.closest('.sidebar')) return;
+            var sparkle = document.createElement('img');
+            sparkle.src = 'IMG/sparkle.png';
+            sparkle.className = 'sparkle-effect';
+            sparkle.style.left = e.pageX + 'px';
+            sparkle.style.top = e.pageY + 'px';
+            document.body.appendChild(sparkle);
+            setTimeout(function () {
+                sparkle.remove();
+            }, 800); // show for 1.8 seconds
+        });
+    </script>
+</body>

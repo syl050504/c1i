@@ -1,0 +1,54 @@
+/* --- SIDEBAR --- */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 80px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 8px;
+    background: #ffffff;
+    border-right: 1px solid #000000;
+    z-index: 10;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    margin: 10px 0;
+    transition: opacity 0.2s ease;
+}
+
+.sidebar a:hover {
+    opacity: 0.5;
+}
+
+/*snail*/
+#background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 9998;
+    /* behind the snail */
+}
+
+#snail {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    /* adjust size as needed */
+    pointer-events: none;
+    z-index: 9999;
+    /* stay on top */
+    transition: transform 0.08s linear;
+    /* slight smoothing for small jumps */
+}

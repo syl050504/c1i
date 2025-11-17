@@ -11,14 +11,14 @@
     align-items: center;
 
     gap: 8px;
-    background: #fff;
+    background: #000000;
     border-right: 1px solid #ddd;
     z-index: 10;
 }
 
 .sidebar a {
     text-decoration: none;
-    color: #000;
+    color: #ffffff;
     font-size: 18px;
     letter-spacing: 0.5px;
     margin: 10px 0;
@@ -31,9 +31,14 @@
 
 
 /* actual content   */
+body {
+    background: #000000;
+    color: #ffffff;
+}
+
 .content {
-    margin-left: 80px;
-    padding: 60px 100px;
+    margin-left: 100px;
+    padding: 80px 100px;
     flex: 1;
     max-width: 900px;
 }

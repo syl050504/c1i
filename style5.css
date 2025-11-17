@@ -41,3 +41,20 @@
     height: auto;
     display: block;
 }
+
+#toggleImage {
+    max-width: 1000px;
+    width: 90vw;
+    /* responsive: 70% of viewport width on small screens */
+    height: auto;
+    display: block;
+    margin: 20px auto;
+}
+
+/* center heading on week5 (targets the non-standard <text> wrapper used in week5.html) */
+text h1 {
+    text-align: center;
+    margin: 0.5rem auto;
+    /* add space from top so heading doesn't sit under the fixed sidebar/header */
+    padding-top: 85px;
+}
