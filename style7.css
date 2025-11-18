@@ -63,7 +63,7 @@ body {
     animation: sparkle-fade 1.8s linear forwards;
 }
 
-@keyframes sparkle-fade{
+@keyframes sparkle-fade {
     0% {
         opacity: 1;
     }
@@ -87,4 +87,19 @@ body {
     0% {
         opacity: 0;
     }
+}
+
+/* ensure SVG arrows in the sidebar are visible and sized (shared) */
+.sidebar a {
+    padding: 6px;
+}
+
+.sidebar a svg {
+    width: 20px;
+    height: 20px;
+    display: block;
+}
+
+.sidebar a svg path {
+    stroke: currentColor;
 }

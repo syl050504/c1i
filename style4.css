@@ -34,3 +34,18 @@
     margin-left: 80px;
     padding: 40px;
 }
+
+/* ensure SVG arrows in the sidebar are visible and sized (shared) */
+.sidebar a {
+    padding: 6px;
+}
+
+.sidebar a svg {
+    width: 20px;
+    height: 20px;
+    display: block;
+}
+
+.sidebar a svg path {
+    stroke: currentColor;
+}

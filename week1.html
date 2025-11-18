@@ -10,15 +10,15 @@
 
 <body>
     <nav class="sidebar">
+        <!-- spacer to preserve vertical position where the top arrow used to be -->
+        <div class="sidebar-spacer" aria-hidden="true"></div>
         <a href="index.html">home</a>
-        <a href="./week1.html">1</a>
-        <a href="./week2.html">2</a>
-        <a href="./week3.html">3</a>
-        <a href="./week4.html">4</a>
-        <a href="./week5.html">5</a>
-        <a href="./week6.html">6</a>
-        <a href="./week7.html">7</a>
-        <a href="./week8.html">8</a>
+        <a id="week-next" href="./week2.html" aria-label="Next week" title="Next week">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false">
+                <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+            </svg>
+        </a>
     </nav>
 
     <div class="container">
