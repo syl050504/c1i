@@ -36,36 +36,3 @@
     stroke: black;
     /* ensure contrast */
 }
-
-
-/* body9 */
-.container {
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    padding-top: 40px;
-    padding-bottom: 20px;
-    background: white;
-
-    #press-button {
-        margin-top: 12px;
-        padding: 10px 20px;
-        font-size: 18px;
-    }
-
-    #wordcontainer {
-        margin-top: 30px;
-        /* ← change this value until it feels right */
-        text-align: center;
-    }
-
-    /* each new word */
-    .unbearable {
-        display: block;
-        font-size: 20px;
-        margin: 10px 0;
-    }
-
-}
