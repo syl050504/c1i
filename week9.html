@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title> Fragments of Memory </title>
-    <link rel="stylesheet" href="style8.css" />
+    <link rel="stylesheet" href="style9.css" />
 </head>
 
 <body>
@@ -24,3 +24,24 @@
             </svg>
         </a>
     </nav>
+
+    <div class="container">
+        <h1 id="wanttobe">I want to be...</h1>
+        <button id="press-button"> press </button>
+        <div id="wordcontainer"></div>
+    </div>
+</body>
+
+<script>
+
+    const button = document.getElementById("press-button");
+    const container = document.getElementById("wordcontainer");
+
+    button.addEventListener("click", () => {
+        const newWord = document.createElement("div");
+        newWord.textContent = "unbearable";
+        newWord.classList.add("unbearable");
+        container.appendChild(newWord);
+    });
+
+</script>
