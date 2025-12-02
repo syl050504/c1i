@@ -51,7 +51,8 @@ body {
 
 /* page title (keep it visible to the right of the fixed sidebar) */
 .page-title {
-    margin-left: 100px; /* account for sidebar width + gap */
+    margin-left: 100px;
+    /* account for sidebar width + gap */
     padding: 24px 16px 8px;
     font-size: 28px;
     color: #000000;
