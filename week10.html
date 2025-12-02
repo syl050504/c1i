@@ -19,3 +19,52 @@
 
         <a href="index.html">home</a>
     </nav>
+
+
+    <h1 class="page-title">click</h1>
+    <div id="imageContainer"></div>
+
+    <script>
+
+        const imageContainer = document.getElementById("imageContainer");
+
+
+        const images = [
+            "IMG/1.JPG",
+            "IMG/2.JPG",
+            "IMG/3.JPG",
+            "IMG/4.JPG",
+            "IMG/5.JPG",
+            "IMG/6.JPG",
+            "IMG/7.JPG",
+            "IMG/8.JPG",
+            "IMG/9.JPG",
+            "IMG/10.JPG",
+            "IMG/11.JPG",
+            "IMG/12.JPG",
+            "IMG/13.JPG",
+            "IMG/14.JPG",
+            "IMG/15.JPG"
+        ];
+
+        let index = 0;
+        document.addEventListener("click", (event) => {
+            if (event.target.closest(".sidebar")) return;
+
+            const img = document.createElement("img");
+            img.src = images[index];
+            img.classList.add("spawned-img");
+
+            img.style.left = event.pageX + "px";
+            img.style.top = event.pageY + "px";
+
+            imageContainer.appendChild(img);
+
+            index++;
+            if (index >= images.length) index = 0;
+        });
+    </script>
+
+</body>
+
+</html>

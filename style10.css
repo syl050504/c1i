@@ -31,8 +31,30 @@
 
 .sidebar a svg {
     width: 24px;
-    /* make sure the SVG is visible */
     height: 24px;
     stroke: black;
-    /* ensure contrast */
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    position: relative;
+    overflow: auto;
+}
+
+.spawned-img {
+    position: absolute;
+    width: 150px;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+
+/* page title (keep it visible to the right of the fixed sidebar) */
+.page-title {
+    margin-left: 100px; /* account for sidebar width + gap */
+    padding: 24px 16px 8px;
+    font-size: 28px;
+    color: #000000;
+    position: relative;
+    z-index: 5;
 }
